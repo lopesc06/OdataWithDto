@@ -1,0 +1,14 @@
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/obj/Debug/netcoreapp2.1/ODataDto.csprojAssemblyReference.cache
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/obj/Debug/netcoreapp2.1/ODataDto.csproj.CoreCompileInputs.cache
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/obj/Debug/netcoreapp2.1/ODataDto.RazorAssemblyInfo.cache
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/obj/Debug/netcoreapp2.1/ODataDto.RazorAssemblyInfo.cs
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/obj/Debug/netcoreapp2.1/ODataDto.AssemblyInfoInputs.cache
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/obj/Debug/netcoreapp2.1/ODataDto.AssemblyInfo.cs
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/bin/Debug/netcoreapp2.1/ODataDto.deps.json
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/bin/Debug/netcoreapp2.1/ODataDto.runtimeconfig.json
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/bin/Debug/netcoreapp2.1/ODataDto.runtimeconfig.dev.json
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/bin/Debug/netcoreapp2.1/ODataDto.dll
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/bin/Debug/netcoreapp2.1/ODataDto.pdb
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/obj/Debug/netcoreapp2.1/ODataDto.RazorTargetAssemblyInfo.cache
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/obj/Debug/netcoreapp2.1/ODataDto.dll
+/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/obj/Debug/netcoreapp2.1/ODataDto.pdb
