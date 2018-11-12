@@ -7,15 +7,15 @@ namespace ODataDto.Entities
     public class Student
     {
         [Key]
-        [MaxLength(30)]
+        [MaxLength(70)]
         public string Alias { get; set; }
 
         [Required]
-        [MaxLength(20)]
+        [MaxLength(30)]
         public string Name { get; set;  }
 
         [Required]
-        [MaxLength(25)]
+        [MaxLength(35)]
         public string Lastname { get; set; }
 
         public int Age { get; set; }

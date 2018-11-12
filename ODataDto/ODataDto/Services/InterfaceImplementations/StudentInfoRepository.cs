@@ -15,6 +15,11 @@ namespace ODataDto.Services.InterfaceImplementations
             _infocontext = infocontext;
         }
 
+        public void AddStudent(Student student)
+        {
+            _infocontext.Students.Add(student);
+        }
+
         public Student GetStudent(string id)
         {
             return _infocontext.Students.Where(s => s.Alias == id).FirstOrDefault();
@@ -23,6 +28,11 @@ namespace ODataDto.Services.InterfaceImplementations
         public IEnumerable<Student> GetStudents()
         {
             return _infocontext.Students;
+        }
+
+        public bool Save()
+        {
+            return (_infocontext.SaveChanges() >= 0);
         }
     }
 }

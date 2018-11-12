@@ -8,5 +8,7 @@ namespace ODataDto.Services.Interfaces
     {
         Student GetStudent(string id);
         IEnumerable<Student> GetStudents();
+        void AddStudent(Student student);
+        bool Save();
     }
 }

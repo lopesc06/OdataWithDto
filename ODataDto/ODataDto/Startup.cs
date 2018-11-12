@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.OData.Builder;
@@ -38,8 +39,14 @@ namespace ODataDto
             }
             AutoMapper.Mapper.Initialize(cfg=>{
                 cfg.CreateMap<Student, StudentDto>()
-                .ForMember(dest => dest.Apellidos, opt => opt.MapFrom(src=> src.Lastname))
-                .ForMember(dest => dest.Username, opt=>opt.MapFrom(src => src.Alias));
+                    .ForMember(dest => dest.Apellidos, opt => opt.MapFrom(src=> src.Lastname))
+                    .ForMember(dest => dest.Username, opt=>opt.MapFrom(src => src.Alias));
+                cfg.CreateMap<StudentDto, Student>()
+                    .ForMember(dest => dest.Lastname, opt => opt.MapFrom(src => src.Apellidos))
+                    .ForMember(dest => dest.Alias, opt => opt.MapFrom(src => src.Username));
+                cfg.CreateMap<StudentForCreationDto, Student>()
+                    .ForMember(dest => dest.Lastname, opt => opt.MapFrom(src => src.Apellidos));
+
                 cfg.CreateMap<Course, CourseDto>();
             });
 
@@ -54,6 +61,11 @@ namespace ODataDto
             ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
             builder.EntitySet<Student>("Stuudeent");
             builder.EntitySet<Course>("coursess");
+
+            var studentAction = builder.EntityType<Student>().Action("absa");
+            studentAction.Parameter<string>("key");
+            studentAction.Returns<StudentDto>();
+
             return builder.GetEdmModel();
         }
     }

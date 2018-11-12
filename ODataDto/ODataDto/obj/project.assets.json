@@ -11668,13 +11668,13 @@
       "projectName": "ODataDto",
       "projectPath": "/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/ODataDto.csproj",
       "packagesPath": "/Users/javiercruzsantiago/.nuget/packages/",
-      "outputPath": "/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/obj",
+      "outputPath": "/Users/javiercruzsantiago/Desktop/OdataDto/ODataDto/ODataDto/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/javiercruzsantiago/.config/NuGet/NuGet.Config"
+        "/Users/javiercruzsantiago/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -11696,28 +11696,28 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[7.0.1, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.1.1"
+            "version": "[2.1.1, )",
+            "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.OData": {
+            "target": "Package",
+            "version": "[7.0.1, )"
           },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.1.2"
-          },
-          "AutoMapper": {
-            "target": "Package",
-            "version": "7.0.1"
-          },
-          "Microsoft.AspNetCore.OData": {
-            "target": "Package",
-            "version": "7.0.1"
+            "version": "[2.1.2, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
-            "version": "2.1",
+            "version": "[2.1.0, )",
             "autoReferenced": true
           }
         },
