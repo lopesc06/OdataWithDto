@@ -60,11 +60,17 @@ namespace ODataDto
         {
             ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
             builder.EntitySet<Student>("Stuudeent");
+            builder.Function("Absa")
+                   .ReturnsCollection<StudentDto>()
+                   .Parameter<string>("Alias");
+
             builder.EntitySet<Course>("coursess");
 
-            var studentAction = builder.EntityType<Student>().Action("absa");
-            studentAction.Parameter<string>("key");
-            studentAction.Returns<StudentDto>();
+            /*builder.Namespace = "ProductService";
+            builder.EntityType<Student>().Collection
+                .Function("Absa")
+                   .Returns<StudentDto>()
+                   .Parameter<string>("Alias");*/
 
             return builder.GetEdmModel();
         }

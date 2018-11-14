@@ -11,7 +11,7 @@ using ODataDto.Services.Interfaces;
 
 namespace ODataDto.Controllers
 {
-    [ODataRoutePrefix("Stuudeent")]
+    //[ODataRoutePrefix("Stuudeent")]
     public class StuudeentController : ODataController
     {
         private readonly IStudentInfoRepository _studentInfoRepository;
@@ -29,9 +29,10 @@ namespace ODataDto.Controllers
             return Ok(studentDto);
         }
 
+        [HttpGet]
         [EnableQuery]
-        [ODataRoute("({key})")]
-        public IActionResult absa([FromODataUri]string key)
+        [ODataRoute("Absa(Alias={key})")]
+        public IActionResult Absa2([FromODataUri]string key)
         {
             var resultEntity = _studentInfoRepository.GetStudent(key);
             var studentDto = Mapper.Map<StudentDto>(resultEntity);
@@ -52,7 +53,7 @@ namespace ODataDto.Controllers
                 return StatusCode(500, "Could not save in DB");
             }
             var CreatedUser = Mapper.Map<StudentDto>(studentEntity);
-            return Ok();//CreatedAtRoute("OdataGetStudent", new {key = studentEntity.Alias}, CreatedUser);
+            return Ok();//CreatedAtRoute("coursess({key})", new { = studentEntity.Alias}, CreatedUser);
         }
     }
 }
